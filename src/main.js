@@ -27,6 +27,7 @@
     'Chrome (all)',
     'Firefox 5+',
     'Safari 7.0',
+    'Safari 8.0',
     'Safari iPad',
     'IE 7.0',
     'IE 8.0',
