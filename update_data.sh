@@ -1,9 +1,11 @@
 
-FROM=2013-02
-FROMINT=201302
-TO=2015-02
-TOINT=201502
+FROM=2014-04
+FROMINT=201404
+TO=2015-04
+TOINT=201504
 
-BASIC="http://gs.statcounter.com/chart.php?201408=undefined&device=Desktop%20%26%20Tablet&device_hidden=desktop%2Btablet&statType_hidden=browser_version_partially_combined&region_hidden=ww&granularity=monthly&statType=Combine%20Chrome%20(all%20versions)%20%26%20Firefox%20(5%2B)&region=Worldwide&fromInt=$FROMINT&toInt=$TOINT&fromMonthYear=$FROM&toMonthYear=$TO&multi-device=true&csv=1"
+BASIC="http://gs.statcounter.com/chart.php?device=Desktop%2C%20Tablet%20%26%20Console&device_hidden=desktop%2Btablet%2Bconsole&statType_hidden=browser_version_partially_combined&region_hidden=ww&granularity=monthly&statType=Combine%20Chrome%20(all%20versions)%20%26%20Firefox%20(5%2B)&region=Worldwide&fromInt=$FROMINT&toInt=$TOINT&fromMonthYear=$FROM&toMonthYear=$TO&multi-device=true&csv=1"
+
+echo $BASIC
 
 curl $BASIC > data/basic_data.csv
